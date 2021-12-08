@@ -17,8 +17,8 @@
     }
 
     &__right{
-        padding: $header_padings+9px 0 $header_padings;
         
+        padding: $header_padings+5px 0 $header_padings;
         display: flex;
 
 
@@ -92,12 +92,13 @@ box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
             
         }
         & span{
+            align-self: flex-end;
             height: 19px;
             width: max-content;
             text-align:center;
             position: absolute;
             top: -5px;
-            right: -15px;
+            right: -5px;
             color: #FFFFFF;
             background-color: $rose_color;
             border-radius: 9px;
@@ -124,6 +125,7 @@ box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
         }
 
         &__right {
+
             &> img{            
             display: none;
             }

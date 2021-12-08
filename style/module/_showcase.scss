@@ -24,13 +24,14 @@
 
     &_i{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 1%;
     }
 
     &__card{
         height: 581px;
-        width: 360px;
+        max-width: 360px;
         position: relative;
         
         &__img_box{
@@ -140,4 +141,13 @@
         background-color: #E5E5E5;
     }
 
+}
+
+
+@media (max-width:768px){
+    .showcase{  
+        &__card:last-child{
+            display: none;
+        }
+    }
 }
