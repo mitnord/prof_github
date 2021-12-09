@@ -11,7 +11,16 @@
         background: url(../img/muzhik_v_palto.png
         ) no-repeat -215px center ;
         background-size: contain;
-        
+        transition: 2s;
+
+        &:hover{
+            transform:skewX(180deg);
+
+
+            & .heading_i__title{
+                justify-content: flex-start;
+            }
+        }
 
         &__title{
             border-left: 12px solid $rose_color;
@@ -23,6 +32,17 @@
             font-size: 32px;
             line-height: 38.4px;
             text-transform: uppercase;
+            transition: 2s;
+
+            &:hover{
+                transform: scale(1.1);
+                max-width: 400px;
+
+                & span{
+                    font-size: 80px;
+                    line-height: 70px;
+                }
+            }
 
             &__b{
                 font-weight: 900;
