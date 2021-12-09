@@ -33,7 +33,13 @@
         height: 581px;
         max-width: 360px;
         position: relative;
-        
+        transition: 0.5s;
+
+        &:hover{
+            transform: scale(1.1);
+            z-index: 20;
+        }
+
         &__img_box{
             position: relative;
             z-index: 1;
@@ -146,7 +152,7 @@
 
 @media (max-width:768px){
     .showcase{  
-        &__card:last-child{
+        &__card:nth-child(9){
             display: none;
         }
     }

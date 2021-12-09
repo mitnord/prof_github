@@ -3,29 +3,43 @@
     &__i{
         position: relative;
         display: flex;
-        justify-content:space-around;
+        justify-content:space-between;
         margin: 51px auto 65px;
+        width: 100%;
     }
 
     &__main{
         cursor: pointer;
-        align-items: flex-start;
         z-index: 10;
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
         width: max-content;
+        
     }
 
     &__main[open]>summary{
         color: #EF5B70;
     }
 
-
+    &__mid{
+        cursor: pointer;
+        z-index: 10;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        width: max-content;
+        color: #ef915b;
+    }
+    &__mid[open] summary{
+        color: #ef915b;
+    } 
 
 
     &__summ{
+
         list-style: none;
 
         &__block{
@@ -49,24 +63,6 @@
             color: #636363;
         }
 
-        &__mid{
-            cursor: pointer;
-            align-items: flex-start;
-            z-index: 10;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 17px;
-            text-transform: uppercase;
-            width: max-content;
-            color: #ef915b;
-        }
-        &__mid[open]>summary{
-            color: #ef915b;
-            /*НЕ РАБОТАЕТ!!!!!!*/
-        } 
-
-        
-
         &__sub>a{
             text-transform: capitalize;
         }
@@ -75,7 +71,6 @@
             margin: 11px;
             padding-left: 15px;
         }
-
         &__sub__a{
             font-weight: normal;
             font-size: 14px;
@@ -84,76 +79,84 @@
             text-decoration: none;
             text-transform: capitalize;
         }
-
     }
 
 
 
     &__middle{
         display: flex;
-        align-items: center top;
         margin: 0 auto;
-        justify-content: space-between;
-        font-size: 14px;
-        line-height: 17px;
-        color: #6F6E6E;
-        text-transform: uppercase;
-
-
-    
-        &__list{
-            z-index: 10;
-            background-color: #FFFFFF;
-            
-           
-        }
+        width: max-content;
 
         &__point{
-            
-
-            &__1{
-                position: absolute;
-                left: 30%;
-                z-index: 10;
-                box-shadow: 5px 4px 32px rgba(0,0,0,0.21);
-            }
-
-            &__2{
-                position: absolute;
-                left: 45%;
-                z-index: 10;
-                box-shadow: 5px 4px 32px rgba(0,0,0,0.21);
-            }
-
-            &__3{
-                position: absolute;
-                left: 55%;
-                z-index: 10;
-                box-shadow: 5px 4px 32px rgba(0,0,0,0.21);
-            }
-        }
-        &__point:not(:last-child){
-            margin-right: 48px;
-        }
-        &__summ{
-            list-style: none;
-
-        }
-        &__summ[open]{
-            box-shadow: 5px 5px 10px 2px #9F9F9F;
-
-        }
-        &__ul{
-            text-transform: uppercase;
+            width: max-content;
+            font-weight: normal;
             font-size: 14px;
-            line-height: 16px;
+            line-height: 17px;
             color: #6F6E6E;
+
+            &:not(:last-child){
+                margin-right: 10%;
+            }
+            
+                & summary{
+                    display: flex;
+                    list-style: none;
+                }
+
+                & ul{
+                    width: 60px;
+                    position: absolute;
+                    text-transform: uppercase;
+                    list-style: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #6F6E6E;
+                    z-index: 10;
+                    background-color: #FFFFFF;
+                    box-shadow: 5px 4px 32px rgba(0,0,0,0.21);
+
+                    & li{
+                        display: flex;
+                        justify-content: center;
+                        margin: 6px auto;
+
+                        &:first-child{
+                            margin-top: 12px;
+                        }
+                        &:last-child{
+                            margin-bottom: 12px;
+                        }
+
+                    }
+
+            }
         }
-        &__ul>li{
-            list-style-type: none;
-            margin: 6px;
+    }
+
+}
+
+
+@media (max-width:768px){
+    .filter{
+        &__middle{
+            margin: 0;
         }
 
     }
+}
 
+@media (max-width:375px){
+    .filter{
+
+
+        &__summ{
+            & span{
+                display: none;
+            }
+        }
+
+    }
 }
