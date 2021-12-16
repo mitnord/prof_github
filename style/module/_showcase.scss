@@ -6,7 +6,7 @@
         flex-direction: column;
         margin: 96px auto 48px;
 
-        &__h2{
+        & h2{
             text-align: center;
             font-size: 30px;
             line-height: 36px;
@@ -14,7 +14,7 @@
             margin-bottom: 6px;
         }
 
-        &__p{
+        & p{
             text-align: center;
             font-size: 14px;
             line-height: 17px;
@@ -46,7 +46,6 @@
   
             width: 360px;
             height: 420px;
-
 
             &__img{
                 position: absolute;
