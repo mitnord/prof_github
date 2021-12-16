@@ -57,11 +57,6 @@
             }
         }
 
-        & i{
-            font-size: 40px;
-            color: white;
-        }
-
         & input{
             display: none;
 
@@ -73,8 +68,8 @@
                 right: 0;
                 top: 87px;
                 -webkit-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
--moz-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
+                -moz-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
+                box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
             }
         }
         
@@ -126,7 +121,7 @@ box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
 
         &__right {
 
-            &> img{            
+            & > img{            
             display: none;
             }
             &__cart{

@@ -15,14 +15,10 @@
 
         &:hover{
             transform:skewX(180deg);
-
-
-            & .heading_i__title{
-                justify-content: flex-start;
-            }
         }
 
-        &__title{
+
+        & h1{
             border-left: 12px solid $rose_color;
             padding-left: 16px;
             max-width:  430px;
@@ -65,7 +61,7 @@
         &_i{
             background-position-x: -120px ;
 
-            &__title{
+            & h1{
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 28.8px;
